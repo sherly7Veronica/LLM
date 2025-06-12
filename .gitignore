@@ -1,0 +1,30 @@
+# Ignore environment variables
+.env
+
+# Ignore Python virtual environments
+.venv/
+venv/
+.data/
+data/
+.chainlit
+.chainlit/
+*chainlit
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VSCode/IDE/editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Chainlit cache or temp
+chainlit_cache/

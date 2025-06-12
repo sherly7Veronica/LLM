@@ -1,0 +1,6 @@
+langchain
+chainlit
+langchain_openai 
+faiss-cpu
+python-dotenv
+langchain-community
