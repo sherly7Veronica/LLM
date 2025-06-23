@@ -28,3 +28,4 @@ Thumbs.db
 
 # Chainlit cache or temp
 chainlit_cache/
+secret.yaml

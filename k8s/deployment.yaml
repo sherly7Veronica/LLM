@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chainlit-bot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chainlit-bot
+  template:
+    metadata:
+      labels:
+        app: chainlit-bot
+    spec:
+      containers:
+        - name: chainlit
+          image: veronica77/chainlit-bot:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: openai-secret
+                  key: OPENAI_API_KEY
